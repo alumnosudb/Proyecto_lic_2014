@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Reservación</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reservation.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<div id="contenedorfrm">
+		<form name="frmReservacion" id="frmreserva">
+			<fieldset id="tpotarj">
+				<legend id="chead"><i class="fa fa-users"> Reservaciones</i></legend>
+				<p id="fpago">*Nota: La forma de pago solo es por medio de Tarjetas de Credito</p>
+				<!--Nombre cliente-->
+				<label>Nombre: </label><input type="text" placeholder=" (nombre segun tarjeta de credito)" id="txtnombre"><br>
+				<!--correo electronico-->
+				<label>Correo Electronico:</label><input type="text" placeholder=" e-mail" id="txtemail">
+                <span id="correomessage"></span><br>
+                <!--dia de reservacion-->
+                <label>Fecha reservación:</label><input type="date" id="fecha">
+                <!--tipo de terjeta-->
+				<fieldset id="tarjeta">
+					<legend id="ttarg"><i class="fa fa-credit-card"></i> Tipo de Tarjeta:</legend>
+					<input type="radio" value="tcmaster" name="cctarjeta" checked>
+					<i class="fa fa-cc-mastercard"> Master Card</i><br>
+					<input type="radio" value="tcvisa" name="cctarjeta">
+					<i class="fa fa-cc-visa"> Visa</i><br>
+					<input type="radio" value="tcamerican" name="cctarjeta">
+					<i class="fa fa-cc-amex"> American Express</i>
+				</fieldset>
+				<!--numero de tarjeta-->
+				<label>Número de Tarjeta:</label><input type="text" id="txtnumtarj" placeholder=" Master Card">
+              <span id="numeroTarjeta"></span>
+              <section>
+                <input type="button" value="RESERVAR" id="btnenviar" href="reservacion2.html">
+              </section>
+			</fieldset>
+		</form>
+	</div>
+  
+  <script src="js/frmreserva.js"></script>
+</body>
+</html>

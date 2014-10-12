@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <!-- end CSS-->     
     <!-- JS-->
+    <script type="text/javascript" src="js/contactenos.js"></script>
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <!-- end JS-->
 </head>
@@ -71,6 +72,33 @@
   <!-- Contenido -->    
   	<section id="content">
       
+        <form action="" class="contact-form" onsubmit="return validar(this);">                
+          <div class="formulario">
+            <div class="column">
+               <label for="nombre">Nombre <span>(requerido)</span></label>
+               <input type="text" name="nombre" class="form-input" onblur="revisar(this)" />
+ 
+               <label for="email">Email <span>(requerido)</span></label>
+               <input type="email" name="email" class="form-input " onblur="revisar(this);revisaremail(this)"/>
+              
+              <label for="lugar">Restaurante <span>(requerido)</span></label>
+              <select name="lugar">
+              <option value="1">Seleccione Restaurante que visito</option>>
+              <option value="2">Avenida Roosevelt sur y 3° calle Pte. San Miguel, El Salvador.</option> 
+              <option value="3">83 Av. Norte y Paseo General Escalón, San Salvador.</option> 
+              <option value="4">61 Avenida Sur y Alameda Roosevelt, Centro Comercial La Campana.</option>
+   
+</select>
+            </div>
+ 
+            <div class="column">
+                <label for="mensaje">Mensaje <span>(requerido)</span></label>
+                <textarea name="mensaje" class="form-input"></textarea>
+            </div>                
+ 
+               <input class="form-btn" type="submit" value="Enviar Mensaje" />
+           </div>        
+       </form>
                   
     </section><!-- Fin de contenido -->
   </div><!-- #Fin del div -->

@@ -1,0 +1,130 @@
+#btnReserva{
+	display: block;
+	width: 200px;
+	border-radius: 8px;
+	border: 2px outset black;
+	height: 35px;
+	background: #eb2626;
+	box-shadow: 0px 2px 4px;
+	margin: 12px 0px 0px 75px;
+	cursor: pointer;
+	font-size: 100%;
+	color: #eee;
+}
+
+#contenedorfrm{
+  background: url('../images/tree_bark.png');
+  padding: 15px;
+}
+
+#tpotarj{
+  width: 60%;
+  margin: auto;
+  height: 600px;
+  background: aliceblue;
+}
+
+#tpotarj i{
+  color: black;
+  font-size: 1.2em;
+}
+
+#btnReserva:hover{
+	background: lightGreen;
+	color: #222;
+	text-shadow: 0px 2px 4px black;
+	animation-name: latido;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+}
+
+a{
+	text-decoration: none;
+}
+
+.fa{
+	color: red;
+}
+
+#chead{
+	padding: 5px 8px;
+	font-size: 1.3em;
+	border: 1px solid black;
+	border-radius: 6px;
+	background: #1b9edd;
+	box-shadow: 1px 2px 4px black;
+}
+
+legend .fa{
+	color: black;
+}
+
+#fpago{
+	color: red;
+	background: #eee;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	margin: 15px auto 45px;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+#ttarg{
+	font-size: 1.2em;
+}
+
+#frmreserva input[type='text']{
+  width: 250px;
+  margin: 10px 0px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 3px
+}
+
+#frmreserva  input[type = 'text']:focus{
+  box-shadow: 0px 0px 8px #3073e9;
+}
+  
+#frmreserva label{
+  display: inline-block;
+  width: 165px;
+}
+
+#frmreserva input[type='date']{
+  margin: 10px 0;
+}
+
+#tarjeta{
+  width: 30%;
+  margin: 12px 0px;
+}
+
+#btnenviar{
+  width: 200px;
+  height: 35px;
+  border-radius: 8px;
+  border-style: outset;
+  background: #eee;
+  margin: 40px 10px;
+  font-size: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 10px black;
+}
+
+#btnenviar:hover{
+  background: #215dc5;
+  border: 1px solid black;
+  color: white;
+}
+
+@keyframes latido{
+	from{
+		transform: scale(1.2);
+	}
+	to{
+		transform: scale(1);
+	}
+}
