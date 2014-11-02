@@ -30,10 +30,13 @@
 }
 
 #btnReserva:hover{
-	background: lightGreen;
+	background: red;
 	color: #222;
 	text-shadow: 0px 2px 4px black;
 	animation-name: latido;
+    -webkit-animation-name: latido;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
 	animation-duration: 1.2s;
 	animation-iteration-count: infinite;
 }
@@ -51,7 +54,7 @@ a{
 	font-size: 1.3em;
 	border: 1px solid black;
 	border-radius: 6px;
-	background: #1b9edd;
+	background: red;
 	box-shadow: 1px 2px 4px black;
 }
 
@@ -114,8 +117,14 @@ legend .fa{
   box-shadow: 0px 0px 10px black;
 }
 
+.errorMessage{
+  font-size: 11px;
+  color: red;
+  text-align: center;
+}
+
 #btnenviar:hover{
-  background: #215dc5;
+  background: red;
   border: 1px solid black;
   color: white;
 }
@@ -127,4 +136,22 @@ legend .fa{
 	to{
 		transform: scale(1);
 	}
+}
+
+@-moz-keyframes latido{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes latido{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
 }
