@@ -67,7 +67,7 @@ function inicial() {
 }
 
 function setData(paramArray) {
-   alert(paramArray);
+   //alert(paramArray);
    var salidaTexo = "";
    var i;
 
