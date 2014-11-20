@@ -9,7 +9,7 @@ if(window.addEventListener){
   window.attachEvent('onload', inicial);
 }
 
-/*lectura de datos guardados en la base txt para almacenamiento local*/
+/*lectura de datos guardados en la base txt para almacenamiento local
 var DBtexto = new XMLHttpRequest();
 var archivo = "BDatos.txt";
 
@@ -20,7 +20,7 @@ DBtexto.onreadystatechange = function () {
    }
 }
 DBtexto.open("GET", archivo, true);
-DBtexto.send();
+DBtexto.send();*/
 /********************************************************************************************************************/
 
 //funcion inicial
@@ -29,7 +29,7 @@ function inicial() {
   var ctrlradio = document.getElementsByName('cctarjeta');
   var botonenviar = document.getElementById('btnenviar');
   var email, numtarj;
-  
+
   for(i = 0; i < ctrlradio.length; i++){
       if(ctrlradio[i].addEventListener){
           ctrlradio[i].addEventListener('click', function (){ radiocheck(this);}, false);
@@ -75,11 +75,10 @@ function setData(paramArray) {
       if (typeof (localStorage) == undefined) {
          alert("para tener una mejor experiencia en navegacion le sugerimos que descargue Google Chrome");
       } else {
-         localStorage.setItem("nombre" + i, paramArray[i].nombre);
-         localStorage.setItem("email" + i, paramArray[i].email);
-         localStorage.setItem("fechaReg" + i, paramArray[i].fechaReg);
-         localStorage.setItem("depart" + i, paramArray[i].depart);
-         localStorage.setItem("restau" + i, paramArray[i].restau);
+         localStorage.setItem("nombre", paramArray[i].nombre);
+         localStorage.setItem("email", paramArray[i].email);
+         localStorage.setItem("fechaReg", paramArray[i].fechaReg);
+         localStorage.setItem("restau", paramArray[i].restau);
       }
    }
 }
@@ -168,7 +167,6 @@ function correccionDatos(valor1, valor2){
           localStorage.setItem("nombre" + contador, txtNombre.value);
           localStorage.setItem("email" + contador, correo.value);
           localStorage.setItem("fechaReg" + contador, fecha.value);
-          localStorage.setItem("depart" + contador, restaurante);
           localStorage.setItem("restau" + contador, departamento);
           
           txtNombre.value = "";

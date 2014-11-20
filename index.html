@@ -13,6 +13,14 @@
   <link rel="stylesheet" href="js/flexslider/flexslider.css">
   <link rel="stylesheet" href="css/estilos.css">
   <!-- fin de CSS-->
+  <!-- Incluimos la libreria jQuery -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ 
+        <!-- Incluimos el plugin -->
+        <script src="js/slider/bjqs.min.js"></script>
+        <script src="js/slider/script.js"></script>
+        <!-- Opcional, importamos una fuente a gusto -->
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   <!-- JS-->
   <script src="js/libs/modernizr-2.6.2.min.js"></script>
   <!-- Fin JS-->
@@ -35,20 +43,19 @@
               <li class="activo"><a href="index.html">Inicio</a></li>
 
               <li>
-                  <a href="catalogo.html">Catálogo</a>
+                  <a href="#">Catálogo</a>
                   <ul>
-                      <li><a href="ofertadeldia.html">Oferta del día</a></li>
                       <li><a href="menuespecial.html">Menús especiales</a></li>
                   </ul>
               </li>
 
-              <li><a target="_blank" href="reservacion2.html">Reservación</a></li>
+              <li><a href="reservacion.html">Reservación</a></li>
 
               <li>
-                  <a href="soporte.html">Soporte</a>
+                  <a href="#">Soporte</a>
                   <ul>
-                      <li><a href="soporte.html#nosotros">Quiénes somos</a></li>
-                      <li><a href="soporte.html#contacto">Contáctenos</a></li>
+                      <li><a href="quienesSomos.html">Quiénes somos</a></li>
+                      <li><a href="soporte.html">Contáctenos</a></li>
                   </ul>
               </li>
 
@@ -63,13 +70,29 @@
     <div class="principal">
        <div class="row"> 
         <div class="grid_5">
-            <h1>El mejor restaurante gourmet a tu servicio.</h1>
-            <p>En este apartado se colocará un objeto slider, el cual mostrará imagenes sobre el local y hablará sobre las reservaciones.
-            </p>
-            <p><a href="reservacion.html" class="boton">Quiero reservar mi mesa</a> <a href="#" class="boton">Quiero saber más</a></p>
+            <h1>El mejor restaurante gourmet a tu servicio.</h1>    
+            <p><a href="reservacion.html" class="boton">Quiero reservar mi mesa</a> <a href="quienesSomos.html" class="boton">Quiero saber más</a></p>
+                               
         </div>
         </div><!-- fin row -->
        </div><!-- fin principal -->
+        <!-- SLIDESHOW -->
+     
+              <div id="slider">
+                  <ul class="bjqs">
+                      <li>
+                          <img src="images/img_slider/img6.jpg" alt="" />
+                      </li>
+                      <li>
+                          <img src="images/restau02_mini.jpg" alt="" />
+                      </li>
+                      <li>
+                          <img src="images/img_slider/img3.jpg" alt="" />
+                      </li>
+                  </ul>
+              </div>
+     
+    <!-- FIN SLIDESHOW -->
     </section><!-- fin hero -->
 
   <!-- Contenedor principal -->   

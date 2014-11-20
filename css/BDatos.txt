@@ -1,0 +1,25 @@
+[
+{"nombre":"Sthefany Villalta Trejo",
+"email":"stvillalta@hotmail.com",
+"fechaReg":"01/10/2014",
+"depart":"San Salvador",
+"restau":"Zona Rosa"},
+
+ {"nombre":"Aristides Gutierrez",
+ "email":"aristides2011@hotmail.com",
+ "fechaReg":"01/10/2014",
+ "depart":"San Salvador",
+ "restau":"Zona Rosa"},
+
+ {"nombre":"Mauricio Contreras Hernadez",
+ "email":"mchernadez@gmail.com",
+ "fechaReg":"01/10/2014",
+ "depart":"San Salvador",
+ "restau":"Plaza Madero"},
+
+ {"nombre":"Fernando Urrutia Morales",
+ "email":"moralesUrrutia@hotmail.com",
+ "fechaReg":"01/10/2014",
+ "depart":"Chalatenango",
+ "restau":"Zona Rosa"}
+ ]

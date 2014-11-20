@@ -14,8 +14,25 @@
   <link rel="stylesheet" href="css/reservation.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <!-- JS-->
-  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <!--<script src="js/libs/modernizr-2.6.2.min.js"></script>-->
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript">
+      $(document).on("ready", function(){
+        //LOCAL STORAGE
+        $("#btnObtener2").on("click", function(){
+          var nombre = window.localStorage.getItem("nombre1");
+          var email = window.localStorage.getItem("email1");
+          var fecha = window.localStorage.getItem("fechaReg1")
+          var restaurante = window.localStorage.getItem("restau1")
 
+          $("#txtnombre").val(nombre);
+          $("#txtemail").val(email);
+          $("#fecha").val(fecha);
+          $("#restaurante").val(restaurante);
+
+        })
+      })
+    </script>
 
 </head>
 <body>
@@ -34,22 +51,24 @@
 				<legend id="chead"><i class="fa fa-users"> Reservaciones</i></legend>
 				<p id="fpago">*Nota: La forma de pago solo es por medio de Tarjetas de Credito</p>
 				<!--Nombre cliente-->
-				<label>Nombre: </label><input type="text" placeholder=" (nombre segun tarjeta de credito)" id="txtnombre"><br>
+				<label>Nombre: </label>
+        <input type="text" placeholder=" (nombre segun tarjeta de credito)" id="txtnombre"><br>
 				<!--correo electronico-->
-				<label>Correo Electronico:</label><input type="text" placeholder=" e-mail" id="txtemail">
+				<label>Correo Electronico:</label>
+        <input type="text" placeholder=" e-mail" id="txtemail">
                 <span id="correomessage"></span><br>
                 <!--dia de reservacion-->
                 <label>Fecha reservación:</label>
                 <input type="date" id="fecha" value="10/09/1900">
                 <br /><br />
-                <label>Departamento de Reserva:</label>
+               <!-- <label>Departamento de Reserva:</label>
                 <select id="depart" name="selectDepart">
                     <option>Sonsonate</option>
                     <option>San Salvador</option>
                     <option>Santa Ana</option>
                     <option>San Miguel</option>
                     <option>Chalatenango</option>
-                </select> &nbsp; &nbsp; &nbsp;
+                </select>--> &nbsp; &nbsp; &nbsp;
                 <label>Restaurante para Evento:</label>
                 <select id="restaurante" name="selectRest">
                     <option>Santa Elena</option>
@@ -72,6 +91,7 @@
 				<label>Número de Tarjeta:</label><input type="text" id="txtnumtarj" placeholder=" Master Card">
               <span id="numeroTarjeta"></span>
               <section>
+                <input type="button" id="btnObtener2" value="Obtener">
                 <input type="button" value="RESERVAR" id="btnenviar" href="Javascript:window.top.close()">
               </section>
 			</fieldset>

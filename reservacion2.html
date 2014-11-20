@@ -12,6 +12,34 @@
 	<link rel="stylesheet" href="css/custom.css" />
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript">
+			$(document).on("ready", function(){
+				//LOCAL STORAGE
+				$("#btnGuardar1").on("click", function(){
+					var npersonas = 1;
+			
+					window.localStorage.setItem("numero_personas",npersonas);
+
+				})
+				$("#btnGuardar2").on("click", function(){
+					var npersonas = 2;
+			
+					window.localStorage.setItem("numero_personas",npersonas);
+
+				})
+				$("#btnGuardar3").on("click", function(){
+					var npersonas = 3;
+			
+					window.localStorage.setItem("numero_personas",npersonas);
+
+				})
+				$("#btnGuardar4").on("click", function(){
+					var npersonas = 4
+					window.localStorage.setItem("numero_personas",npersonas);
+
+				})
+			})
+		</script>
 </head> 
 
 <body> 
@@ -23,18 +51,14 @@
 		<div id="banner">        
             <div id="logo"><img src="images/logo-banner.png" alt="logo" ></div> 
         </div>
-	<h1> ¿Qué desea ordenar para comer? </h1>
+        <h1> ¿Para cuántas personas será su reservación? </h1>
 	
+	<ul data-role="listview" data-inset="true" name="" >
+	<li id="btnGuardar1"><a href="reservacion3.html"  data-transition="slidedown"><img src="images/persona.png"/>1 Persona <span class="ui-li-count" > 1 </span></a> </li>
+	<li id="btnGuardar2"><a href="reservacion3.html"  data-transition="slidedown"><img src="images/persona2.png"/> 2 Personas <span class="ui-li-count" > 2 </span></a> </li>
+	<li id="btnGuardar3"><a href="reservacion3.html" data-transition="slidedown"> <img src="images/persona3.png"/> 3 Personas <span class="ui-li-count" > 3 </span></a> </li>
+	<li id="btnGuardar4"><a href="reservacion3.html" data-transition="slidedown"><img src="images/persona4.png"/> 4 Personas <span class="ui-li-count" > 4 </span></a> </li>
 
-	<ul data-role="listview" data-inset="true" >
-	<li><a href="reservacion3.html" data-transition="slidedown"> <img src="images/sushis.jpg"/> <h3> Plato fuerte</h3></a></li>
-	<li><a href="reservacion3.html"  data-transition="slidedown"> <img src="images/pizza.jpg"/> <h3> Meriendas </h3></a></li>
-	<li><a href="reservacion3.html"  data-transition="slidedown"> <img src="images/kebap.jpg"/> <h3> Picositos</h3></a></li>
-	<li><a href="reservacion3.html"  data-transition="slidedown"> <img src="images/burger.jpg"/> <h3> Comidas rápidas</h3></a></li>
-	<li><a href="reservacion3.html"  data-transition="slidedown"> <img src="images/nems.jpg"/> <h3> Lo nuevo </h3></a></li>
-	<li><a href="reservacion3.html"  data-transition="slidedown"> <img src="images/tradi.jpg"/> <h3> Tradicional</h3></a></li>	
-	</ul>	
-	
 	</div>
 	</div>
 

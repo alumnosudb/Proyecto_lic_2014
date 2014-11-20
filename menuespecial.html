@@ -10,6 +10,14 @@
     <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
     <!-- Fuentes de Google-->
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+    <!-- Incluimos la libreria jQuery -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ 
+        <!-- Incluimos el plugin -->
+        <script src="js/slider/bjqs.min.js"></script>
+        <script src="js/slider/script.js"></script>
+        <!-- Opcional, importamos una fuente a gusto -->
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
     <!-- CSS-->
     <link rel="stylesheet" href="js/flexslider/flexslider.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -36,20 +44,19 @@
               <li><a href="index.html">Inicio</a></li>
 
               <li class="activo">
-                  <a href="catalogo.html">Catálogo</a>
+                  <a href="#">Catálogo</a>
                   <ul>
-                      <li><a href="ofertadeldia.html">Oferta del día</a></li>
                       <li><a href="menuespecial.html">Menús especiales</a></li>
                   </ul>
               </li>
 
-              <li><a target="_blank" href="reservacion2.html">Reservación</a></li>
+              <li><a href="reservacion.html">Reservación</a></li>
 
               <li>
-                  <a href="soporte.html">Soporte</a>
+                  <a href="#">Soporte</a>
                   <ul>
-                      <li><a href="soporte.html#nosotros">Quiénes somos</a></li>
-                      <li><a href="soporte.html#contacto">Contáctenos</a></li>
+                      <li><a href="quienesSomos.html">Quiénes somos</a></li>
+                      <li><a href="soporte.html">Contáctenos</a></li>
                   </ul>
               </li>
 
@@ -62,6 +69,32 @@
     <section id="page-header" class="clearfix">    
       <div class="principal">
       	<h1>Menús especiales</h1>
+        <!-- SLIDESHOW -->
+     
+              <div id="slider">
+                  <ul class="bjqs">
+                      <li>
+                          <img src="images/img_slider/img6.jpg" alt="" title="Los platillos más exquisitos al mejor precio siempre." />
+                      </li>
+                      <li>
+                          <img src="images/restau02_mini.jpg" alt="" title="Disfruta tu comida en un ambiente elegante y cómodo." />
+                      </li>
+                      <li>
+                          <img src="images/img_slider/img3.jpg" alt="" />
+                      </li>
+                      <li>
+                          <img src="images/img_slider/img6.jpg" alt="" title="Los platillos más exquisitos al mejor precio siempre." />
+                      </li>
+                      <li>
+                          <img src="images/restau02_mini.jpg" alt="" title="Disfruta tu comida en un ambiente elegante y cómodo." />
+                      </li>
+                      <li>
+                          <img src="images/img_slider/img3.jpg" alt="" />
+                      </li>
+                  </ul>
+              </div>
+     
+    <!-- FIN SLIDESHOW -->
       </div>
 
     </section>
@@ -72,24 +105,8 @@
   <!-- Contenido -->    
   	<section id="content">
         <div class="container">
-    <h1>Comidas Gourmet</h1>
-    <div id="slider">
-      <div><img src="images/img_slider/img3.jpg"></div>
-      <div><img src="images/img_slider/img2.jpg"></div>
-      <div><img src="images/img_slider/img1.jpg"></div>
-      <div><img src="images/img_slider/img4.jpg"></div>
-      <div><img src="images/img_slider/img5.jpg"></div>
-      <div><img src="images/img_slider/img6.jpg"></div>
-    </div>
-    <div id="txt_slider">
-      <div><img src="images/img_slider/txtimage/txtimg3.jpg"></div>
-      <div><img src="images/img_slider/txtimage/txtimg2.jpg"></div>
-      <div><img src="images/img_slider/txtimage/txtimg1.jpg"></div>
-      <div><img src="images/img_slider/txtimage/txtimg4.jpg"></div>
-      <div><img src="images/img_slider/txtimage/txtimg5.jpg"></div>
-      <div><img src="images/img_slider/txtimage/txtimg6.jpg"></div>
-  </div>
-</div>
+
+        </div>
                   
     </section><!-- Fin de contenido -->
   </div><!-- #Fin del div -->
